@@ -15,6 +15,7 @@ public class MessagesController {
 
     @RequestMapping("/getinfo")
     public Messages greeting(@RequestParam(value="name", defaultValue="OpenShift Platform") String name) {
+    //Comment test github
         return new Messages(counter.incrementAndGet(),
                             String.format(template, name));
     }
