@@ -18,5 +18,7 @@ public class MessagesController {
     //Comment test github
         return new Messages(counter.incrementAndGet(),
                             String.format(template, name));
+
+                        //Second comment
     }
 }
