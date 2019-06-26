@@ -17,5 +17,7 @@ public class MessagesController {
     public Messages greeting(@RequestParam(value="name", defaultValue="OpenShift Platform") String name) {
          return new Messages(counter.incrementAndGet(),
                             String.format(template, name));
+
+                            //Comment added
      }
 }
